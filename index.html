@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Commerce Website</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+</head>
+<body>
+
+<!-- HEADER -->
+<section id="header">
+  <a href="#">
+    <img src="https://cdn-icons-png.flaticon.com/512/825/825500.png" class="logo" alt="logo" width="50">
+  </a>
+  <ul id="navbar">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#featured">Shop</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+  </ul>
+</section>
+
+<!-- HERO -->
+<section id="hero">
+  <h4>Trade-in-offer</h4>
+  <h2>Super value deals</h2>
+  <h1>On all products</h1>
+  <p>Save more with coupons & up to 70% off!</p>
+  <button onclick="scrollToProducts()">Shop Now</button>
+</section>
+
+<!-- FEATURES -->
+<section id="feature" class="section-p1">
+  <div class="fe-box">
+    <img src="https://cdn-icons-png.flaticon.com/512/869/869636.png">
+    <h6>Free Shipping</h6>
+  </div>
+  <div class="fe-box">
+    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png">
+    <h6>Online Order</h6>
+  </div>
+  <div class="fe-box">
+    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png">
+    <h6>Save Money</h6>
+  </div>
+  <div class="fe-box">
+    <img src="https://cdn-icons-png.flaticon.com/512/2989/2989988.png">
+    <h6>Promotions</h6>
+  </div>
+  <div class="fe-box">
+    <img src="https://cdn-icons-png.flaticon.com/512/929/929564.png">
+    <h6>Happy Sell</h6>
+  </div>
+</section>
+
+<!-- FEATURED PRODUCTS -->
+<section id="featured" class="section-p1">
+  <h2>Featured Products</h2>
+  <p>Summer Collections New Modern Design</p>
+
+  <div class="pro-container">
+    <div class="pro" onclick="alert('Product added to cart!')">
+      <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=800">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Casual T-Shirt</h5>
+        <h4>₹799</h4>
+      </div>
+    </div>
+
+    <div class="pro" onclick="alert('Product added to cart!')">
+      <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=800">
+      <div class="des">
+        <span>nike</span>
+        <h5>Stylish Shirt</h5>
+        <h4>₹999</h4>
+      </div>
+    </div>
+
+    <div class="pro" onclick="alert('Product added to cart!')">
+      <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?q=80&w=800">
+      <div class="des">
+        <span>puma</span>
+        <h5>Premium Wear</h5>
+        <h4>₹1299</h4>
+      </div>
+    </div>
+
+    <div class="pro" onclick="alert('Product added to cart!')">
+      <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?q=80&w=800">
+      <div class="des">
+        <span>zara</span>
+        <h5>New Fashion</h5>
+        <h4>₹1099</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="section-p1">
+  <p style="text-align:center;">© 2026 Your E-Commerce Website</p>
+</footer>
+
+<script>
+function scrollToProducts() {
+  document.getElementById("featured").scrollIntoView({ behavior: "smooth" });
+}
+</script>
+
+</body>
+</html>

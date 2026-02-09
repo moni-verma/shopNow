@@ -1,0 +1,213 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.section-p1 { padding: 40px 80px; }
+.section-m1 { margin: 40px 80px; }
+
+button.normal {
+  padding: 10px 20px;
+  border: none;
+  background: #276ebb;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+button.normal:hover { background: #1f5aa0; }
+
+/* HEADER */
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+#navbar {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+#navbar li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  transition: 0.3s;
+}
+#navbar li a:hover { color: #ff6600; }
+
+/* HERO */
+#hero {
+  background-image: url("https://images.unsplash.com/photo-1521335629791-ce4aec67dd47?q=80&w=1600");
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #111;
+}
+#hero{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    ), 
+    url("https://images.unsplash.com/photo-1521335629791-ce4aec67dd47?q=80&w=1600&auto=format&fit=crop");
+
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+}
+
+
+#hero button {
+  width: 160px;
+  height: 45px;
+  border-radius: 25px;
+  border: none;
+  background: #ff5722;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+#hero button:hover { background: #e64a19; }
+
+/* FEATURES */
+#feature {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#feature .fe-box {
+  width: 180px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: 0.3s;
+  background: #fff;
+}
+
+#feature .fe-box:hover {
+  transform: translateY(-5px);
+}
+
+/* PRODUCTS */
+#product1 { text-align: center; }
+
+.pro-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.pro {
+  background: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.pro:hover { transform: translateY(-5px); }
+
+.pro img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.pro .des { text-align: left; padding: 10px 0; }
+.pro .des span { color: gray; font-size: 14px; }
+.pro .des h5 { font-size: 18px; }
+.pro .des h4 { color: #ff5722; }
+
+/* BANNER */
+#banner {
+  background: url("https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1600") center/cover no-repeat;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+
+#banner h2 span { color: #ff5722; }
+
+/* SMALL BANNER */
+#sm-banner {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+.banner-box {
+  flex: 1;
+  background: url("https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?q=80&w=1200") center/cover no-repeat;
+  color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 80px;
+}
+
+footer .col {
+  flex: 1;
+  min-width: 220px;
+  margin: 20px 0;
+}
+
+footer .col a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+footer .col a:hover { color: #ff5722; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .section-p1 { padding: 20px; }
+  #header { flex-direction: column; }
+  #hero { padding: 40px 20px; height: auto; }
+  footer { padding: 40px 20px; }
+}
+
+                         
